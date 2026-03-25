@@ -3,173 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>王磊 (Wanglei)</title>
+  <title>王磊 | SWISS RADICAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #111;
-      color: #e0e0e0;
-      font-size: 17px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 100px 24px 120px;
-    }
-
-    a {
-      color: #999;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    a:hover {
-      color: #fff;
-    }
-
-    .header {
-      margin-bottom: 72px;
-    }
-
-    .name {
-      font-size: 36px;
-      font-weight: 600;
-      color: #fff;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-
-    .tagline {
-      font-size: 20px;
-      color: #888;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    .links {
-      display: flex;
-      gap: 20px;
-      font-size: 15px;
-    }
-
-    .links a {
-      color: #666;
-    }
-
-    .links a:hover {
-      color: #ccc;
-    }
-
-    section {
-      margin-bottom: 64px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 600;
-      color: #555;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 16px;
-    }
-
-    p {
-      color: #aaa;
-      margin-bottom: 12px;
-    }
-
-    .placeholder {
-      color: #444;
-      font-style: italic;
-    }
-
-    .writings-list {
-      list-style: none;
-    }
-
-    .writings-list li {
-      margin-bottom: 8px;
-    }
-
-    .writings-list .year {
-      color: #555;
-      margin-right: 8px;
-    }
-
-    .writings-list a {
-      color: #888;
-    }
-
-    .writings-list a:hover {
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 80px;
-      padding-top: 32px;
-      border-top: 1px solid #222;
-      font-size: 13px;
-      color: #444;
-    }
+    :root { --bg: #000000; --text: #ffffff; --accent: #39ff14; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
+    .grid-bg { position: fixed; width: 100vw; height: 100vh; display: grid; grid-template-columns: repeat(12, 1fr); gap: 0; z-index: -1; pointer-events: none; }
+    .grid-bg div { border-right: 1px solid rgba(255, 255, 255, 0.05); }
+    main { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(12, 1fr); padding: 100px 40px; min-height: 100vh; }
+    .hero { grid-column: 1 / 13; margin-bottom: 200px; position: relative; }
+    .name { font-size: clamp(80px, 15vw, 240px); font-weight: 900; line-height: 0.8; letter-spacing: -10px; margin-bottom: 40px; }
+    .name span { color: var(--accent); }
+    .vertical-tag { grid-column: 1 / 2; writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 5px; color: var(--accent); }
+    .bio-box { grid-column: 3 / 10; margin-bottom: 150px; }
+    .bio-text { font-size: clamp(24px, 4vw, 56px); font-weight: 500; line-height: 1; letter-spacing: -2px; }
+    .links-box { grid-column: 10 / 13; display: flex; flex-direction: column; gap: 20px; font-size: 18px; font-weight: 700; }
+    .links-box a { color: white; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; transition: 0.2s; }
+    .links-box a:hover { color: var(--accent); }
+    .timeline-box { grid-column: 1 / 9; }
+    h2 { font-size: 14px; text-transform: uppercase; font-weight: 900; letter-spacing: 5px; margin-bottom: 40px; border-top: 4px solid white; padding-top: 10px; display: inline-block; }
+    .timeline { list-style: none; }
+    .timeline-item { margin-bottom: 40px; display: grid; grid-template-columns: 200px 1fr; font-size: 24px; font-weight: 700; line-height: 1.1; }
+    .timeline-item span:first-child { color: var(--accent); }
+    .assets-box { grid-column: 1 / 13; margin-top: 150px; font-size: 10vw; font-weight: 900; line-height: 0.8; letter-spacing: -5px; text-transform: uppercase; border-top: 10px solid var(--accent); padding-top: 40px; }
+    @media (max-width: 900px) { main { display: flex; flex-direction: column; padding: 40px 20px; } .hero { margin-bottom: 80px; } .bio-box, .links-box, .timeline-box { width: 100%; margin-bottom: 80px; } .timeline-item { grid-template-columns: 1fr; gap: 5px; } }
   </style>
 </head>
 <body>
+  <div class="grid-bg"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   <main>
-    <header class="header">
-      <h1 class="name">王磊 (Wanglei)</h1>
-      <p class="tagline">你很难跟一个纯粹为了好玩的人竞争。</p>
-      <nav class="links">
-        <a href="mailto:wllion@icloud.com">Email</a>
-        <a href="https://github.com/wllion821" target="_blank">GitHub</a>
-        <a href="https://x.com/wllion800821" target="_blank">X (Twitter)</a>
-        <a href="https://www.linkedin.com/in/lei-wang-06767b8/" target="_blank">LinkedIn</a>
-      </nav>
-    </header>
-
-    <section>
-      <h2>Bio</h2>
-      <p>王磊，「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。利用多 Agent 协同构建数字流水线，实践 One-Person Company 理念。</p>
-    </section>
-
-    <section>
-      <h2>Timeline</h2>
-      <ul class="writings-list">
-        <li><span class="year">2026.03.10</span> 作为主理人创立「W先生备忘录」</li>
-        <li><span class="year">2020.01 - 至今</span> Grupo Bimbo, IT Director</li>
-        <li><span class="year">2015.01 - 2020.01</span> SMP Automotive Global, Regional IT Manager</li>
-        <li><span class="year">2011.06 - 2015.01</span> 戴姆勒大中华区投资有限公司, IT Project Manager</li>
-        <li><span class="year">2008.05 - 2011.05</span> 诺基亚, IT Project Manager</li>
-        <li><span class="year">2005.11 - 2008.04</span> 普华永道中国, Senior operation engineer</li>
-        <li><span class="year">2003.08 - 2005.10</span> HP, IT engineer</li>
-        <li><span class="year">1999 - 2003</span> 南京航空航天大学, 机械工程及自动化 本科</li>
+    <div class="hero">
+      <h1 class="name">WANG<br>LEI<span>.</span></h1>
+    </div>
+    <div class="vertical-tag">ONE-PERSON-COMPANY // 2026</div>
+    <div class="bio-box">
+      <p class="bio-text">「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。多 Agent 协同。数字流水线。</p>
+    </div>
+    <div class="links-box">
+      <a href="mailto:wllion@icloud.com">EMAIL</a>
+      <a href="https://github.com/wllion821">GITHUB</a>
+      <a href="https://x.com/wllion800821">X/TWITTER</a>
+      <a href="https://www.linkedin.com/in/lei-wang-06767b8/">LINKEDIN</a>
+    </div>
+    <div class="timeline-box">
+      <h2>TIMELINE</h2>
+      <ul class="timeline">
+        <li class="timeline-item"><span>2026</span>创立「W先生备忘录」</li>
+        <li class="timeline-item"><span>2020</span>Grupo Bimbo, IT Director</li>
+        <li class="timeline-item"><span>2015</span>SMP Automotive Global, Manager</li>
+        <li class="timeline-item"><span>2011</span>Daimler GRC, Project Manager</li>
+        <li class="timeline-item"><span>2008</span>NOKIA, IT Project Manager</li>
+        <li class="timeline-item"><span>1999</span>南京航空航天大学 [NUAA]</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Projects & PKM</h2>
-      <p class="placeholder">[基于 Obsidian 的数字资产...]</p>
-    </section>
-
-    <section>
-      <h2>Writings</h2>
-      <ul class="writings-list">
-        <li><span class="year">[2026]</span><a href="#">文章标题占位符...</a></li>
-        <li><span class="year">[2025]</span><a href="#">文章标题占位符...</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      wllion@icloud.com
-    </footer>
+    </div>
+    <div class="assets-box">
+      OBSIDIAN / AUTOMATION / ASSETS
+    </div>
   </main>
 </body>
 </html>
