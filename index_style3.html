@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王磊 (Wanglei) | Style 3: Organic Natural</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #fdfaf6; --text: #2d3436; --secondary: #636e72; --accent: #55efc4; --accent-soft: #e3fcf7; --card-bg: #ffffff; --shadow: rgba(0, 0, 0, 0.03); }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.6; overflow-x: hidden; }
+    body::before { content: ""; position: fixed; top: -10%; right: -5%; width: 400px; height: 400px; background: radial-gradient(circle, var(--accent-soft) 0%, transparent 70%); z-index: -1; border-radius: 50%; }
+    main { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+    header { margin-bottom: 80px; text-align: left; }
+    .name { font-family: 'Outfit', sans-serif; font-size: 42px; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 12px; }
+    .tagline { font-size: 18px; color: var(--secondary); font-weight: 400; margin-bottom: 32px; line-height: 1.4; }
+    nav.links { display: flex; flex-wrap: wrap; gap: 12px; }
+    nav.links a { background: var(--card-bg); color: var(--text); text-decoration: none; padding: 8px 18px; border-radius: 50px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px var(--shadow); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 1px solid transparent; }
+    nav.links a:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 25px var(--shadow); }
+    section { margin-bottom: 50px; background: var(--card-bg); padding: 40px; border-radius: 32px; box-shadow: 0 10px 40px var(--shadow); }
+    h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 24px; font-weight: 800; }
+    .bio-text { font-size: 17px; color: var(--secondary); line-height: 1.8; }
+    .timeline { list-style: none; }
+    .timeline-item { position: relative; padding-left: 30px; margin-bottom: 20px; }
+    .timeline-item::before { content: ""; position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+    .timeline-date { display: block; font-size: 13px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .timeline-content { font-size: 15px; color: var(--secondary); }
+    .project-card { background: var(--accent-soft); padding: 24px; border-radius: 20px; border: 1px solid rgba(85, 239, 196, 0.3); color: var(--text); }
+    footer { margin-top: 60px; text-align: center; font-size: 14px; color: var(--secondary); font-weight: 300; }
+    @media (max-width: 600px) { .name { font-size: 34px; } section { padding: 30px 20px; border-radius: 24px; } main { padding: 40px 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="name">王磊 (Wanglei)</h1>
+      <p class="tagline">“你很难跟一个纯粹为了好玩的人竞争。”</p>
+      <nav class="links">
+        <a href="mailto:wllion@icloud.com">Email</a>
+        <a href="https://github.com/wllion821">GitHub</a>
+        <a href="https://x.com/wllion800821">X</a>
+        <a href="https://www.linkedin.com/in/lei-wang-06767b8/">LinkedIn</a>
+      </nav>
+    </header>
+    <section>
+      <h2>Bio</h2>
+      <p class="bio-text">「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。利用多 Agent 协同构建数字流水线，实践 One-Person Company 理念。</p>
+    </section>
+    <section>
+      <h2>Timeline</h2>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-date">2026.03.10</span><span class="timeline-content">创立「W先生备忘录」</span></li>
+        <li class="timeline-item"><span class="timeline-date">2020 - 至今</span><span class="timeline-content">Grupo Bimbo, IT Director</span></li>
+        <li class="timeline-item"><span class="timeline-date">2015 - 2020</span><span class="timeline-content">SMP Automotive Global, Regional IT Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2011 - 2015</span><span class="timeline-content">戴姆勒大中华区投资有限公司, IT Project Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2008 - 2011</span><span class="timeline-content">诺基亚, IT Project Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2005 - 2008</span><span class="timeline-content">普华永道中国, Senior operation engineer</span></li>
+        <li class="timeline-item"><span class="timeline-date">2003 - 2005</span><span class="timeline-content">HP, IT engineer</span></li>
+        <li class="timeline-item"><span class="timeline-date">1999 - 2003</span><span class="timeline-content">南京航空航天大学, 机械工程及自动化 本科</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Digital Assets</h2>
+      <div class="project-card"><p>基于 Obsidian 的数字资产铸造与多 Agent 自动化，将复杂的逻辑转化为有温度的内容。</p></div>
+    </section>
+    <footer>Crafted with Nature & Intent. 2026</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanglei | RADICAL SWISS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --black: #000000; --white: #ffffff; --green: #00ff00; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--black); color: var(--white); font-family: 'Space Grotesk', sans-serif; line-height: 1.1; overflow-x: hidden; }
+    main { position: relative; padding: 4vw; }
+    .side-title { position: fixed; right: -150px; top: 300px; transform: rotate(90deg); font-size: 15vw; font-weight: 800; color: rgba(255,255,255,0.05); text-transform: uppercase; z-index: -1; }
+    .name-hero { font-size: clamp(60px, 15vw, 220px); font-weight: 800; text-transform: uppercase; line-height: 0.8; margin-bottom: 80px; letter-spacing: -5px; }
+    .name-hero span { color: var(--green); display: block; }
+    .tagline-radical { font-size: clamp(24px, 4vw, 48px); font-weight: 400; margin-bottom: 120px; max-width: 800px; }
+    .grid-radical { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+    .bio- радикаль { grid-column: 1 / span 8; font-size: 32px; font-weight: 300; margin-bottom: 150px; }
+    .links- радикаль { grid-column: 9 / span 4; display: flex; flex-direction: column; gap: 20px; text-align: right; }
+    .links- радикаль a { font-size: 18px; font-weight: 700; color: var(--green); text-decoration: none; text-transform: uppercase; }
+    .links- радикаль a:hover { color: var(--white); }
+    h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 60px; color: var(--green); grid-column: 1 / span 12; border-top: 1px solid var(--green); padding-top: 20px; }
+    .timeline { grid-column: 1 / span 12; display: flex; flex-wrap: wrap; gap: 80px; }
+    .timeline-item { width: 300px; border-left: 1px solid var(--white); padding-left: 20px; }
+    .timeline-date { font-size: 14px; font-weight: 800; margin-bottom: 10px; color: var(--green); }
+    .timeline-content { font-size: 20px; font-weight: 300; line-height: 1.2; }
+    .project- радикаль { grid-column: 1 / span 12; margin-top: 150px; font-size: 5vw; font-weight: 700; text-transform: uppercase; line-height: 0.9; color: var(--green); border: 5px solid var(--green); padding: 40px; text-align: center; }
+    footer { margin-top: 200px; font-size: 14px; text-align: center; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 10px; }
+    @media (max-width: 1024px) { .grid-radical { display: flex; flex-direction: column; } .links- радикаль { text-align: left; } .timeline { gap: 40px; } .bio- радикаль { font-size: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="side-title">WANGLEI // 2026</div>
+  <main>
+    <div class="name-hero">王磊<span>WANGLEI</span></div>
+    <div class="tagline-radical">你很难跟一个纯粹为了好玩的人竞争。</div>
+    
+    <div class="grid-radical">
+      <div class="links- радикаль">
+        <a href="mailto:wllion@icloud.com">Email</a>
+        <a href="https://github.com/wllion821">GitHub</a>
+        <a href="https://x.com/wllion800821">X/Twitter</a>
+        <a href="https://www.linkedin.com/in/lei-wang-06767b8/">LinkedIn</a>
+      </div>
+      <div class="bio- радикаль">
+        「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。利用多 Agent 协同构建数字流水线，实践 One-Person Company 理念。
+      </div>
+
+      <h2>Experience Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-date">2026.03.10</div><div class="timeline-content">作为主理人创立「W先生备忘录」</div></div>
+        <div class="timeline-item"><div class="timeline-date">2020 - PRES</div><div class="timeline-content">Grupo Bimbo, IT Director</div></div>
+        <div class="timeline-item"><div class="timeline-date">2015 - 2020</div><div class="timeline-content">SMP Automotive Global, Regional IT Manager</div></div>
+        <div class="timeline-item"><div class="timeline-date">2011 - 2015</div><div class="timeline-content">DAIMLER GRC, IT Project Manager</div></div>
+        <div class="timeline-item"><div class="timeline-date">2008 - 2011</div><div class="timeline-content">NOKIA, IT Project Manager</div></div>
+        <div class="timeline-item"><div class="timeline-date">2005 - 2008</div><div class="timeline-content">PwC CN, Senior operation engineer</div></div>
+        <div class="timeline-item"><div class="timeline-date">2003 - 2005</div><div class="timeline-content">HP, IT engineer</div></div>
+        <div class="timeline-item"><div class="timeline-date">1999 - 2003</div><div class="timeline-content">NUAA, MECH-ENG & AUTO [B.S.]</div></div>
+      </div>
+
+      <div class="project- радикаль">OBSIDIAN + MULTI-AGENT AUTOMATION.</div>
+    </div>
+    
+    <footer>WANGLEI // SHANGHAI // 2026</footer>
+  </main>
+</body>
+</html>

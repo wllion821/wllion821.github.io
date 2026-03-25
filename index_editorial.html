@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanglei | THE ARCHIVE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    :root { --paper: #f4f1ea; --ink: #1a1a1a; --gray: #888; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #dcd9d2; color: var(--ink); font-family: 'Public Sans', sans-serif; padding: 40px 20px; line-height: 1.4; }
+    main { max-width: 900px; margin: 0 auto; background: var(--paper); box-shadow: 20px 20px 0 rgba(0,0,0,0.05); min-height: 1000px; display: grid; grid-template-columns: 80px 1fr; border: 1px solid #ccc; }
+    .sidebar { border-right: 1px solid #ddd; display: flex; align-items: center; justify-content: center; background: #eee; }
+    .sidebar-text { transform: rotate(-90deg); white-space: nowrap; font-size: 12px; font-weight: 800; letter-spacing: 5px; color: #999; text-transform: uppercase; }
+    .content { padding: 60px; position: relative; }
+    .header-top { display: flex; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 40px; font-weight: 800; font-size: 12px; text-transform: uppercase; }
+    .name { font-family: 'Crimson Pro', serif; font-size: 72px; font-weight: 300; margin-bottom: 20px; line-height: 0.9; letter-spacing: -2px; }
+    .tagline { font-family: 'Crimson Pro', serif; font-style: italic; font-size: 24px; color: var(--gray); margin-bottom: 60px; }
+    section { margin-bottom: 80px; }
+    h2 { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 3px; color: var(--gray); margin-bottom: 30px; display: flex; align-items: center; }
+    h2::after { content: ""; flex: 1; height: 1px; background: #ddd; margin-left: 20px; }
+    .bio-text { font-family: 'Crimson Pro', serif; font-size: 32px; line-height: 1.1; margin-bottom: 40px; font-weight: 400; }
+    .timeline { list-style: none; }
+    .timeline-item { display: grid; grid-template-columns: 150px 1fr; margin-bottom: 15px; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+    .timeline-date { font-weight: 800; color: #666; }
+    .project-box { border: 2px solid var(--ink); padding: 30px; font-family: 'Crimson Pro', serif; font-size: 24px; font-style: italic; background: #fff; }
+    .links { position: absolute; top: 60px; right: 60px; display: flex; flex-direction: column; gap: 5px; text-align: right; }
+    .links a { font-size: 11px; font-weight: 800; color: var(--ink); text-decoration: none; text-transform: uppercase; border-bottom: 1px solid transparent; }
+    .links a:hover { border-bottom: 1px solid var(--ink); }
+    @media (max-width: 768px) { main { grid-template-columns: 1fr; } .sidebar { display: none; } .content { padding: 30px; } .name { font-size: 50px; } .links { position: static; text-align: left; margin-bottom: 40px; flex-direction: row; flex-wrap: wrap; gap: 15px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="sidebar"><div class="sidebar-text">WANGLEI // CLASSIFIED ARCHIVE 2026</div></div>
+    <div class="content">
+      <div class="header-top"><span>FILE NO. 821-WLL</span><span>ISSUE: MARCH 2026</span></div>
+      <div class="links">
+        <a href="mailto:wllion@icloud.com">Email</a>
+        <a href="https://github.com/wllion821">GitHub</a>
+        <a href="https://x.com/wllion800821">X</a>
+        <a href="https://www.linkedin.com/in/lei-wang-06767b8/">LinkedIn</a>
+      </div>
+      <h1 class="name">王磊 (Wanglei)</h1>
+      <p class="tagline">"你很难跟一个纯粹为了好玩的人竞争。"</p>
+      
+      <section>
+        <h2>01 / BIOGRAPHY</h2>
+        <p class="bio-text">「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。利用多 Agent 协同构建数字流水线，实践 One-Person Company 理念。</p>
+      </section>
+
+      <section>
+        <h2>02 / EXPERIENCE TIMELINE</h2>
+        <ul class="timeline">
+          <li class="timeline-item"><span class="timeline-date">2026.03.10</span><span>创立「W先生备忘录」</span></li>
+          <li class="timeline-item"><span class="timeline-date">2020 - PRES</span><span>Grupo Bimbo, IT Director</span></li>
+          <li class="timeline-item"><span class="timeline-date">2015 - 2020</span><span>SMP Automotive Global, Regional IT Manager</span></li>
+          <li class="timeline-item"><span class="timeline-date">2011 - 2015</span><span>戴姆勒大中华区投资有限公司, IT Project Manager</span></li>
+          <li class="timeline-item"><span class="timeline-date">2008 - 2011</span><span>诺基亚, IT Project Manager</span></li>
+          <li class="timeline-item"><span class="timeline-date">2005 - 2008</span><span>普华永道中国, Senior operation engineer</span></li>
+          <li class="timeline-item"><span class="timeline-date">2003 - 2005</span><span>HP, IT engineer</span></li>
+          <li class="timeline-item"><span class="timeline-date">1999 - 2003</span><span>南京航空航天大学, 机械工程及自动化 本科</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>03 / DIGITAL ASSETS</h2>
+        <div class="project-box">基于 Obsidian 的数字资产铸造与多 Agent 自动化...</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王磊 (Wanglei) | Style 1: Minimal Luxury</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #ffffff; --text: #1a1a1a; --secondary: #757575; --accent: #000000; --divider: #eeeeee; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: var(--bg); color: var(--text); font-family: 'Source Sans Pro', sans-serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    main { max-width: 800px; margin: 0 auto; padding: 120px 40px; }
+    header { margin-bottom: 100px; text-align: center; }
+    .name { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; margin-bottom: 16px; }
+    .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; color: var(--secondary); margin-bottom: 32px; font-weight: 400; }
+    nav.links { display: flex; justify-content: center; gap: 30px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; }
+    nav.links a { color: var(--text); text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.3s ease; padding-bottom: 2px; }
+    nav.links a:hover { border-bottom: 1px solid var(--accent); }
+    section { margin-bottom: 80px; opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s ease forwards; }
+    section:nth-child(2) { animation-delay: 0.2s; } section:nth-child(3) { animation-delay: 0.4s; } section:nth-child(4) { animation-delay: 0.6s; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    h2 { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: var(--secondary); margin-bottom: 24px; border-bottom: 1px solid var(--divider); padding-bottom: 8px; }
+    .bio-text { font-size: 19px; font-weight: 300; color: var(--text); max-width: 600px; margin: 0 auto; text-align: center; }
+    .timeline { list-style: none; }
+    .timeline-item { display: grid; grid-template-columns: 140px 1fr; margin-bottom: 16px; font-size: 16px; }
+    .timeline-date { color: var(--secondary); font-weight: 400; }
+    .project-card { padding: 30px; border: 1px solid var(--divider); transition: border-color 0.3s ease; text-align: center; font-size: 18px; }
+    .project-card:hover { border-color: var(--accent); }
+    footer { margin-top: 120px; text-align: center; font-size: 13px; color: var(--secondary); letter-spacing: 0.1em; text-transform: uppercase; }
+    @media (max-width: 600px) { .name { font-size: 38px; } .timeline-item { grid-template-columns: 1fr; gap: 4px; margin-bottom: 24px; } main { padding: 60px 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="name">王磊</h1>
+      <p class="tagline">"你很难跟一个纯粹为了好玩的人竞争。"</p>
+      <nav class="links">
+        <a href="mailto:wllion@icloud.com">Email</a>
+        <a href="https://github.com/wllion821">GitHub</a>
+        <a href="https://x.com/wllion800821">X</a>
+        <a href="https://www.linkedin.com/in/lei-wang-06767b8/">LinkedIn</a>
+      </nav>
+    </header>
+    <section>
+      <h2>Bio</h2>
+      <p class="bio-text">「W先生备忘录」主理人。专注于 AI 自动化工作流与个人数字资产铸造。利用多 Agent 协同构建数字流水线，实践 One-Person Company 理念。</p>
+    </section>
+    <section>
+      <h2>Timeline</h2>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-date">2026.03.10</span><span>作为主理人创立「W先生备忘录」</span></li>
+        <li class="timeline-item"><span class="timeline-date">2020 - 至今</span><span>Grupo Bimbo, IT Director</span></li>
+        <li class="timeline-item"><span class="timeline-date">2015 - 2020</span><span>SMP Automotive Global, Regional IT Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2011 - 2015</span><span>戴姆勒大中华区投资有限公司, IT Project Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2008 - 2011</span><span>诺基亚, IT Project Manager</span></li>
+        <li class="timeline-item"><span class="timeline-date">2005 - 2008</span><span>普华永道中国, Senior operation engineer</span></li>
+        <li class="timeline-item"><span class="timeline-date">2003 - 2005</span><span>HP, IT engineer</span></li>
+        <li class="timeline-item"><span class="timeline-date">1999 - 2003</span><span>南京航空航天大学, 机械工程及自动化 本科</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Digital Assets</h2>
+      <div class="project-card">基于 Obsidian 的数字资产铸造与多 Agent 自动化</div>
+    </section>
+    <footer>&copy; 2026 Wanglei. Built with Intentionality.</footer>
+  </main>
+</body>
+</html>
