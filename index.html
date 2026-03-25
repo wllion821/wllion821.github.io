@@ -12,22 +12,29 @@
     .grid-bg { position: fixed; width: 100vw; height: 100vh; display: grid; grid-template-columns: repeat(12, 1fr); gap: 0; z-index: -1; pointer-events: none; }
     .grid-bg div { border-right: 1px solid rgba(255, 255, 255, 0.05); }
     main { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(12, 1fr); padding: 100px 40px; min-height: 100vh; }
-    .hero { grid-column: 1 / 13; margin-bottom: 200px; position: relative; }
+    .hero { grid-column: 1 / 13; margin-bottom: 200px; position: relative; display: flex; justify-content: space-between; align-items: flex-start; }
     .name { font-size: clamp(80px, 15vw, 240px); font-weight: 900; line-height: 0.8; letter-spacing: -10px; margin-bottom: 40px; }
     .name span { color: var(--accent); }
+    .avatar { width: clamp(100px, 12vw, 180px); height: clamp(100px, 12vw, 180px); border-radius: 50%; object-fit: cover; filter: grayscale(100%) contrast(120%); border: 2px solid var(--text); transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    .avatar:hover { filter: grayscale(0%); border-color: var(--accent); transform: scale(1.05); }
     .vertical-tag { grid-column: 1 / 2; writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 5px; color: var(--accent); }
     .bio-box { grid-column: 3 / 10; margin-bottom: 150px; }
     .bio-text { font-size: clamp(24px, 4vw, 56px); font-weight: 500; line-height: 1; letter-spacing: -2px; }
     .links-box { grid-column: 10 / 13; display: flex; flex-direction: column; gap: 20px; font-size: 18px; font-weight: 700; }
     .links-box a { color: white; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; transition: 0.2s; }
     .links-box a:hover { color: var(--accent); }
-    .timeline-box { grid-column: 1 / 9; }
+    .timeline-box { grid-column: 1 / 8; }
     h2 { font-size: 14px; text-transform: uppercase; font-weight: 900; letter-spacing: 5px; margin-bottom: 40px; border-top: 4px solid white; padding-top: 10px; display: inline-block; }
     .timeline { list-style: none; }
     .timeline-item { margin-bottom: 40px; display: grid; grid-template-columns: 200px 1fr; font-size: 24px; font-weight: 700; line-height: 1.1; }
     .timeline-item span:first-child { color: var(--accent); }
+    .writings-box { grid-column: 8 / 13; padding-left: 60px; border-left: 1px solid rgba(255,255,255,0.2); }
+    .writings-list { list-style: none; display: flex; flex-direction: column; gap: 30px; }
+    .writings-list li a { color: white; text-decoration: none; font-size: clamp(18px, 2vw, 28px); font-weight: 700; line-height: 1.2; transition: 0.2s; display: inline-block; }
+    .writings-list li a:hover { color: var(--accent); }
+    .writings-list li span { display: block; font-size: 12px; color: #888; font-weight: 700; margin-top: 10px; font-family: 'Space Grotesk', monospace; letter-spacing: 2px; }
     .assets-box { grid-column: 1 / 13; margin-top: 150px; font-size: 10vw; font-weight: 900; line-height: 0.8; letter-spacing: -5px; text-transform: uppercase; border-top: 10px solid var(--accent); padding-top: 40px; }
-    @media (max-width: 900px) { main { display: flex; flex-direction: column; padding: 40px 20px; } .hero { margin-bottom: 80px; } .bio-box, .links-box, .timeline-box { width: 100%; margin-bottom: 80px; } .timeline-item { grid-template-columns: 1fr; gap: 5px; } }
+    @media (max-width: 900px) { main { display: flex; flex-direction: column; padding: 40px 20px; } .hero { flex-direction: column; margin-bottom: 80px; gap: 40px; } .bio-box, .links-box, .timeline-box, .writings-box { width: 100%; margin-bottom: 80px; padding-left: 0; border-left: none; } .timeline-item { grid-template-columns: 1fr; gap: 5px; } .avatar { align-self: flex-start; } }
   </style>
 </head>
 <body>
@@ -35,6 +42,7 @@
   <main>
     <div class="hero">
       <h1 class="name">WANG<br>LEI<span>.</span></h1>
+      <img src="https://github.com/wllion821.png" alt="Wang Lei" class="avatar">
     </div>
     <div class="vertical-tag">ONE-PERSON-COMPANY // 2026</div>
     <div class="bio-box">
@@ -55,6 +63,14 @@
         <li class="timeline-item"><span>2011</span>Daimler GRC, Project Manager</li>
         <li class="timeline-item"><span>2008</span>NOKIA, IT Project Manager</li>
         <li class="timeline-item"><span>1999</span>南京航空航天大学 [NUAA]</li>
+      </ul>
+    </div>
+    <div class="writings-box">
+      <h2>WRITINGS & MEMOS</h2>
+      <ul class="writings-list">
+        <li><a href="#">Obsidian 数字花园 ↗</a><span>DIGITAL GARDEN / KNOWLEDGE BASE</span></li>
+        <li><a href="#">构建个人 AI 自动化工作流 ↗</a><span>SYSTEM ARCHITECTURE / AI</span></li>
+        <li><a href="#">从企业高管到一人公司 ↗</a><span>BUSINESS MEMO / MINDSET</span></li>
       </ul>
     </div>
     <div class="assets-box">
